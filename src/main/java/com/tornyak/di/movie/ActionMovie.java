@@ -22,7 +22,7 @@ public abstract class ActionMovie implements Movie {
 	}
 
 	@Override
-	public void show() {
+	public void play() {
 		System.out.println("Showing: " + this.name());
 		villain.doEvel();
 		hero.saveTheWorld(villain);

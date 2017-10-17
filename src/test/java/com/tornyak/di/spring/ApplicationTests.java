@@ -17,7 +17,7 @@ public class ApplicationTests {
 
 	@Test
 	public void showMovie() {
-		movie.show();
+		movie.play();
 	}
 
 }

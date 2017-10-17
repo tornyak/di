@@ -6,8 +6,8 @@ import com.tornyak.di.movie.Movie;
 
 public class Application {
 	public static void main(String[] args) {
-		Injector injector = Guice.createInjector(new TestModule());
+		Injector injector = Guice.createInjector(new ThunderballModule());
 		Movie movie = injector.getInstance(Movie.class);
-		movie.show();
+		movie.play();
 	}
 }

@@ -6,13 +6,13 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.tornyak.di.movie.Movie;
 
-public class ApplicationTests {
+public class ApplicationTest {
 
 	@Test
 	public void showMovie() {
 		Injector injector = Guice.createInjector(new TestModule());
 		Movie movie = injector.getInstance(Movie.class);
-		movie.show();
+		movie.play();
 	}
 
 }
